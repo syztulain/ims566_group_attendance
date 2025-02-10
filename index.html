@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('foyer-utama.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.w3-display-middle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle-center w3-jumbo">
+    <p>Welcome to Form Attendance</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="redirectToLogin('student')" class="w3-button w3-black">Login Student</button></p>
+    <p><button onclick="redirectToLogin('lecturer')" class="w3-button w3-black">Login Lecturer</button></p>
+  </div>
+</div>
+
+<script>
+function redirectToLogin(userType) {
+    if (userType === 'student') {
+        window.location.href = 'login_student.php';
+    } else if (userType === 'lecturer') {
+        window.location.href = 'login_lecturer.php';
+    } 
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Lecturer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("background2.jpg");
+  min-height: 100%;
+}
+.big-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#form" class="w3-bar-item w3-button">ATTENDANCE FORM</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:60px">WELCOME TO<br>ADMIN ATTENDANCE FORM</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:80px">WELCOME TO<b><br>ADMIN ATTENDANCE FORM</b></span>
+  </div>
+</header>
+
+<!-- Create Container -->
+<div class="w3-container w3-black w3-padding-64 w3-small" id="form">
+    <div class="w3-content">
+    
+      <h1 class="w3-center" style="margin-bottom:89px">ATTENDANCE FORM</h1>
+      <div class="w3-row w3-center w3-border w3-border-dark-grey">
+        <a href="create_attendance.php">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red big-text">Create</div>
+        </a>
+        <a href="read_attendace.html">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red big-text">Read</div>
+        </a>
+        <a href="update_attendance.php">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red big-text">Update</div>
+        </a>
+        <a href="delete_attendance.php">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red big-text">Delete</div>
+        </a>
+        <a href="search.php">
+            <div class="w3-col s4 tablink w3-padding-large w3-hover-red big-text">Search</div>
+        </a>
+      </div>
+       
+    </div>
+</div>
+
+  </div>
+</body>
+</html>
